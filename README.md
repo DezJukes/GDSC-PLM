@@ -11,7 +11,6 @@ A group project task to do a website for a chosen organization. Here we are maki
 - Pics & Videos (Past events and such)
 - Footer
 
-// Below are new pages
 ### Community
 - Sponsors
 - Local Sponsors
