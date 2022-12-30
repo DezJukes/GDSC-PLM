@@ -4,8 +4,7 @@ A group project task to do a website for a chosen organization. Here we are maki
 ## Structure of the Website
 ### Main/Home Page
 - Animation(Bringing students together)
-- Future Events
-- Past Events
+- Events
 - About GDSC
 - Mission Vision
 - Pics & Videos (Past events and such)
