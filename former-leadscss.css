@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html {
+  height: 90%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  transition: all 1s;
+  box-sizing: border-box;
+}
+
+/* NavbarCSS */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#lef {
+  float: left;
+}
+
+#rig {
+  font-size: 20px;
+  margin-right: 3%;
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+
+}
+
+li.dropdown {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 5px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo {
+  width: 40px;
+  height: 20px;
+
+}
+
+#lg {
+  padding-bottom: 0;
+}
+
+#lg:hover {
+  background-color: white;
+}
+/* NavbarCss end */
+
+/**here new**/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:30px;
+  background-image: url(https://imgur.com/mkwCrLM.png);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  transition: .5s;
+}
+.float:hover {
+  width: 80px;
+  height: 80px;
+}
+.my-float{
+	margin-top:22px;
+}
+/**until here**/
+.bg-image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid black;
+}
+
+
+
+
+.background-image1 {
+  width: 100%;
+}
+.hr1 {
+  margin-left: -10px;
+  height: 15px;
+  width: 1425px;
+  margin-top: -10px;
+  border-top: 5px white;
+  box-shadow: 2px 1px 5px #696969;
+}
+
+.background-image2 {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table1 {
+  margin-top: -50%;
+}
+.PresidentM {
+  border-style: outset;
+  border-color: blue;
+  border-width: 3px;
+  box-shadow: 2px 1px 5px #696969;
+}
+.PresidentR {
+  border-style: outset;
+  border-color: red;
+  border-width: 3px;
+  box-shadow: 2px 1px 5px #696969;
+  transition: 1s;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+i.th1 {
+  border-style: solid;
+  margin-top: 1%;
+  margin-left: 8%;
+  box-shadow: 5px 5px 5px #696969;
+  background-color: #FFFDD0;
+  width: 70%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.hr2 {
+  margin-left: -12px;
+  height: 15px;
+  width: 1425px;
+  margin-top: 25px;
+  border-top: 5px white;
+  box-shadow: 2px 1px 5px #696969;
+}
+.th1:hover {
+  transform: scale(1.2);
+}
+
+
+table {
+  margin-top: 1%;
+  width: 98%;
+
+}
+img.haribots {
+  width: 20%;
+}
+th.th-haribot {
+  width: 100px;
+  transition: 1s;
+}
+th.th-haribot:hover {
+  transform: scale(1.1);
+}
+a {
+  color: black;
+  text-decoration: none;
+
+ 
+

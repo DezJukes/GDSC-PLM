@@ -1,0 +1,355 @@
+body, html {
+  height: 97%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  transition: all 1s;
+  box-sizing: border-box;
+}
+/**here new**/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:30px;
+  background-image: url(https://imgur.com/mkwCrLM.png);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  transition: .5s;
+}
+.float:hover {
+  width: 80px;
+  height: 80px;
+}
+.my-float{
+	margin-top:22px;
+}
+/**until here**/
+.bg-image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid black;
+}
+
+/* Nav Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#lef {
+  float: left;
+}
+
+#rig {
+  font-size: 20px;
+  margin-right: 3%;
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+
+}
+
+li.dropdown {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo {
+  width: 40px;
+  height: 20px;
+
+}
+
+#lg {
+  padding-bottom: 0;
+}
+
+#lg:hover {
+  background-color: white;
+}
+/* Nav Bar end */
+
+/**Haribot css**/
+.harbody {
+  height: 100%;
+}
+.haribot {
+  text-align: center;
+  float: left;
+}
+.haribot img {
+  transform: rotate(13deg);
+  width: 500px;
+  height: 500px;
+}
+
+.cont {
+ padding: 200px;
+ position: absolute;
+ top: -100px;
+ left: 350px;
+ padding-right: 50px;
+ padding-bottom: 0;
+}
+
+.faq-drawer {
+  margin-bottom: 30px;
+}
+
+.faq-drawer__content-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+  border-top: #000 1px solid;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+.faq-drawer__title:hover { 
+  color: #4E4B52  ;
+}
+
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 80px;
+  }
+}
+
+
+div.img {
+  background-image: url("https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/323080958_747233356636928_7248513357011795225_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=c78ePp9rgZ4AX-aqzmU&_nc_ht=scontent.fmnl4-1.fna&oh=03_AdQcn6OO_TKnMjaEjyWBOaI8wzAWemFf8qnD4ipF3kh7jA&oe=63D8932D");
+  z-index: -1;
+  position: relative;
+  margin-top: -7.8%;
+}
+.img2 {
+  background-image: url("https://imgur.com/hXtnEvH.png");
+  height: 80%;
+  margin-top: -6.1%;
+}
+
+.line {
+  position: absolute;
+  top: 2082px;
+  left: 642px;
+  height: 5px;
+  width: 70px;
+  background-color: black;
+}
+
+#ev {
+  position: absolute;
+  top: 92%;
+  margin-left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.bullet {
+  position: absolute;
+  top: 90%;
+  left: 21%;
+  height: 90px;
+  width: 10px;
+  background-color: black;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 18%;
+  padding-left: 80px;
+  align-items: center;
+}
+
+.slider {
+  height: 20rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.item .title {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.item .title1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.item img {
+  height: 14rem;
+
+}
+
+.next,
+.prev {
+  font-family: monospace;
+  font-size: 5rem;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgb(100, 100, 100, 0.5);
+}
+
+.prev {
+  transform: rotate(-180deg);
+}
+
+.next:hover {
+  text-shadow: 2px 2px 2px rgb(200, 200, 200);
+}
+
+.prev:hover {
+  text-shadow: 2px -2px 2px rgb(200, 200, 200);
+}
+
+.item {
+  margin-top: -1%;
+  flex: 1 0 25%;
+  min-height: 200px;
+  text-align: center;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    flex: 1 0 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .item {
+    flex: 1 0 100%;
+  }
+}
+
+/* 3rdSec css */
+table {
+  margin-top: 1%;
+
+}
+img.haribots {
+  width: 25%;
+}
+th {
+  width: 450px;
+  transition: 1s;
+}
+th:hover {
+  transform: scale(1.1);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+/*3rdsec css end */
+
+.item:hover {
+  transform: scale(1.3);
+}

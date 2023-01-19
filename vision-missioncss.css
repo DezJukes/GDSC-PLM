@@ -1,0 +1,263 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  transition: all 1s;
+  box-sizing: border-box;
+}
+ 
+/* NavbarCSS */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#lef {
+  float: left;
+}
+
+#rig {
+  font-size: 20px;
+  margin-right: 3%;
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+
+}
+
+li.dropdown {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo {
+  width: 40px;
+  height: 20px;
+
+}
+
+#lg {
+  padding-bottom: 0;
+}
+
+#lg:hover {
+  background-color: white;
+}
+/* NavbarCss end */
+
+/**here new**/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:30px;
+  background-image: url(https://imgur.com/mkwCrLM.png);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  transition: .5s;
+}
+.float:hover {
+  width: 80px;
+  height: 80px;
+}
+.my-float{
+	margin-top:22px;
+}
+/**until here**/
+.bg-image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid black;
+}
+
+
+img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.centered1 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: black;
+}
+ 
+.centered2 {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: Arial;
+  font-size: 23px;
+  color: grey;
+}
+
+
+table {
+  margin-top: -25%;
+  width: 98%;
+
+}
+img.haribots {
+  width: 18%;
+}
+th.th-haribot {
+  width: 100px;
+  transition: 1s;
+}
+th.th-haribot:hover {
+  transform: scale(1.1);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img.img2 {
+  position: relative;
+  z-index: -1;
+  border-style: solid;
+  width: 100%;
+  margin-top: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.header2 {
+  margin-left: 30%;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+h2.header3 {
+  margin-left: 28%;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+p.par3 {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p.par4 {
+  font-size: 23px;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.vision {
+  border-style: solid;
+  background-color: gold;
+  box-shadow: 2px 3px 5px #696969;
+  margin-left: 150px;
+  margin-top: -50%;
+  background-color: #F8D210;
+  width: 25%;
+  border-radius: 100px;
+  transition: 1s;
+}
+
+div.vision-content {
+  border-style: solid;
+  box-shadow: 2px 3px 5px #696969;
+  margin-left: 50px;
+  margin-top: 25px;
+  background-color: #FFFDD0;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+
+}
+
+
+div.mission {
+  border-style: solid;
+  background-color: orange;
+  box-shadow: 2px 3px 5px #696969;
+  margin-left: 860px;
+  margin-top: -430px;
+  background-color: #F8D210;
+  width: 25%;
+  border-radius: 100px;
+  transition: 1s;
+}
+
+div.mission-content {
+  border-style: solid;
+  box-shadow: 5px 5px 5px #696969;
+  margin-left: 730px;
+  margin-top: 25px;
+  background-color: #FFFDD0;
+  width: 46%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+
+
