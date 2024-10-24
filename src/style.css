@@ -19,8 +19,9 @@ html, body {
     display: flex;
     justify-content: space-between; /* Space between the logo and the nav links */
     align-items: center;
-    background-color: #333;
+    background-color: white;
     padding: 10px 20px;
+    border: 1px solid black;
   }
 
   /* Logo and Website Name */
@@ -35,7 +36,7 @@ html, body {
   }
 
   .logo h1 {
-    color: white;
+    color: black;
     font-size: 24px;
     margin: 0;
   }
@@ -48,7 +49,7 @@ html, body {
   }
 
   .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0 15px;
     font-size: 18px;
@@ -114,4 +115,27 @@ html, body {
   #gdsc-moving-logo {
     width: 30%;
     padding: 0 20px;
+  }
+
+  /*Vision Mission CSS*/
+  #wrapper-content3 {
+    background-image: url("assets/bg2.png");
+  }
+
+  #vision-mission-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .vision-mission-content {
+    width: 50%;
+  }
+
+  .vm-title {
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px 100px;
+    padding: 10px 20px;
   }
