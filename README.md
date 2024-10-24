@@ -7,14 +7,15 @@ A group project task to do a website for a chosen organization. Here we are maki
 - Events
 - About GDSC
 - Mission Vision
-- Pics & Videos (Past events and such)
-- Footer
-
-### Community
-- Sponsors
-- Local Sponsors
-- History
 
 ### About
-- GDSC PLM
+- What is GDSC PLM
+
+### Community
+- History
 - Executive Boards
+- Developers of this website
+
+### Additional Features!
+- Haribot FAQ
+- You can sign up!
