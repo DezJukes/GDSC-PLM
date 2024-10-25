@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+    font-family: Google Sans, sans-serif;
+    transition: 1.5ms ease;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}   
+
+/* Initial hidden state for the sections */
+.section {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-50px); /* Slide from left */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Animation effect */
+}
+
+/* Visible state to apply slide animation */
+.section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Reset slide position */
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0; /* Fixed at the top */
+    width: 100%; /* Full width to avoid resizing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+  }
+  
+  
+  /* Logo and Website Name */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Center the navigation links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  #header-img {
+    width: 100%;
+  }
+  
+  #intro-text {
+    text-align: center;
+  }
+
+/* Responsive Header */
+header {
+    text-align: center;
+}
+
+/* Wrapper Content and GDSC Info */
+#wrapper-content1 {
+    background-image: url("../assets/bg2.png");
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gdsc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-wrapper {
+    margin: 0;
+}
+
+.info-title {
+    font-size: 28px;
+}
+
+.info-description {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 100px;
+}
+
+#gdsc-founders {
+    width: 70%;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+/* Carousel Section */
+#execs-section {
+    background: url("../assets/bg3.png");
+    padding: 50px 20px;
+}
+
+#execs-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease;
+    padding: 0 5px;
+}
+
+/* Set each image width to show 3 images in the visible area */
+.carousel img {
+    width: calc(33.33% - 10px); /* Adjusts to show 3 images with gaps */
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 5px;
+}
+
+.carousel-button.right {
+    right: 5px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Section */
+footer {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: rgb(165, 183, 0);
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+#haribot {
+    position: fixed;
+    bottom: 20px;         /* Distance from the bottom of the viewport */
+    right: 20px;          /* Distance from the right of the viewport */
+    width: 60px;          /* Adjust to control the size of the haribot */
+    height: auto;         /* Keeps the image's aspect ratio */
+    z-index: 1000;        /* Ensures it stays on top of other elements */
+    cursor: pointer;      /* Makes it clickable, if needed */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .carousel img {
+        width: calc(100% - 10px); /* Show one image per view on smaller screens */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .info-title {
+        font-size: 24px;
+    }
+
+    .info-description {
+        font-size: 14px;
+        padding: 0 0;
+    }
+
+    #gdsc-founders {
+        width: 80%;
+    }
+
+    .carousel img {
+        width: calc(100% - 5px);
+    }
+}
+
+@media (max-width: 480px) {
+    #header-img {
+        margin-top: 150px;
+      }
+    
+      #wrapper-content1 {
+        background: none;
+      }
+    
+      #execs-section {
+        background: none;
+      }
+    
+      .navbar {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+      }
+    
+      .logo img {
+          height: 30px;
+      }
+    
+      .logo h1 {
+          font-size: 18px;
+      }
+
+    .info-title {
+        font-size: 20px;
+    }
+
+    .info-description {
+        font-size: 13px;
+        padding: 0 0;
+    }
+
+    #execs-title {
+        font-size: 20px;
+    }
+
+    .carousel img {
+        width: calc(100% - 5px);
+    }
+}
