@@ -17,3 +17,27 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlide();
 }
+
+//-------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+
+    const observerOptions = {
+        threshold: 0.2 // Ensures the animation triggers when at least 20% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
