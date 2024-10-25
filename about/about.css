@@ -1,6 +1,6 @@
 /* General Reset */
 * {
-    font-family: Google Sans, sans-serif;
+    font-family: Google Sans, sans-serif, Arial;
     transition: 1.5ms ease;
     box-sizing: border-box;
 }
