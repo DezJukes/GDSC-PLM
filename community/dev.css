@@ -89,13 +89,13 @@ html, body {
     padding: 20px;
   }
   
-  #pastEvent-intro {
+  #team-intro {
     font-size: 30px;
     margin: 0 auto;
     text-align: center;
   }
   
-  #pastEvents-content {
+  #team-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -103,17 +103,17 @@ html, body {
     padding: 20px;
   }
   
-  .pastEvents-card {
+  .team-card {
     max-width: 300px;
     text-align: center;
   }
   
-  .pastEvent-img {
+  .team-img {
     width: 100%;
     border: 1px solid black;
   }
   
-  .pastEvent-title, .pastEvent-date {
+  .team-title, .team-date {
     text-align: center;
   }
 
@@ -191,7 +191,7 @@ footer {
         font-size: 24px;
     }
   
-    #pastEvent-intro {
+    #team-intro {
         font-size: 24px;
     }
   
@@ -239,7 +239,7 @@ footer {
         font-size: 18px;
     }
   
-    #intro-text, #pastEvent-intro, .info-title, .vm-title {
+    #intro-text, #team-intro, .info-title, .vm-title {
         font-size: 22px;
     }
   
@@ -247,7 +247,7 @@ footer {
         font-size: 14px;
     }
   
-    #pastEvents-content {
+    #team-content {
         flex-direction: column;
     }
   
