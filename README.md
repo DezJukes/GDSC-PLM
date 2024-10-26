@@ -10,10 +10,10 @@ A group project task to do a website for a chosen organization. Here we are maki
 
 ### About
 - What is GDSC PLM
+- Executive Boards
 
 ### Community
 - History
-- Executive Boards
 - Developers of this website
 
 ### Additional Features!

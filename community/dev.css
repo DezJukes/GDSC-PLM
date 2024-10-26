@@ -1,0 +1,257 @@
+* {
+    font-family: Google Sans, sans-serif, Arial;
+    transition: 1.5ms ease;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}   
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0; /* Fixed at the top */
+    width: 100%; /* Full width to avoid resizing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+  }
+  
+  
+  /* Logo and Website Name */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Center the navigation links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+
+  #intro-text {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  /* Base state for hidden sections */
+.section {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* State when the section is in view */
+  .section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /*Devs*/
+
+  #wrapper-content1 {
+    background-image: url("../assets/bg1.png");
+    padding: 20px;
+  }
+  
+  #pastEvent-intro {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #pastEvents-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pastEvents-card {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .pastEvent-img {
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  .pastEvent-title, .pastEvent-date {
+    text-align: center;
+  }
+
+
+
+  /* Footer CSS */
+footer {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-section {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: rgb(165, 183, 0);
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  #haribot {
+    position: fixed;
+    bottom: 20px;         /* Distance from the bottom of the viewport */
+    right: 20px;          /* Distance from the right of the viewport */
+    width: 60px;          /* Adjust to control the size of the haribot */
+    height: auto;         /* Keeps the image's aspect ratio */
+    z-index: 1000;        /* Ensures it stays on top of other elements */
+    cursor: pointer;      /* Makes it clickable, if needed */
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .nav-links a {
+        font-size: 16px;
+    }
+  
+    #intro-text {
+        font-size: 24px;
+    }
+  
+    #pastEvent-intro {
+        font-size: 24px;
+    }
+  
+    .info-title, .vm-title {
+        font-size: 28px;
+    }
+  
+    .info-description, .vm-description {
+        font-size: 16px;
+    }
+  
+    #gdsc-moving-logo {
+        width: 100%;
+    }
+  
+    .logo h1 {
+        font-size: 20px;
+    }
+  
+    .footer-section h2 {
+        font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #header-img {
+      margin-top: 150px;
+    }
+  
+    #wrapper-content1 {
+      background: url("../assets/bg3.png");
+    }
+  
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+  
+    .logo img {
+        height: 30px;
+    }
+  
+    .logo h1 {
+        font-size: 18px;
+    }
+  
+    #intro-text, #pastEvent-intro, .info-title, .vm-title {
+        font-size: 22px;
+    }
+  
+    .info-description, .vm-description {
+        font-size: 14px;
+    }
+  
+    #pastEvents-content {
+        flex-direction: column;
+    }
+  
+    #gdsc-moving-logo {
+        width: 80%;
+    }
+  
+    .footer-section h2, .footer-section p {
+        font-size: 0.8em;
+    }
+  }
+  

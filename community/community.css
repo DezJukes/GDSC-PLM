@@ -15,6 +15,19 @@ html, body {
     height: 100%;
 }
 
+/* Base state for hidden sections */
+.section {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* State when the section is in view */
+.section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Navigation Bar */
 .navbar {
     position: fixed;
@@ -72,3 +85,170 @@ html, body {
   #intro-text {
     text-align: center;
   }
+
+  /*Carousel CSS*/
+  #chapters-section {
+    background: url("../assets/bg1.png");
+  }
+
+  #chapters-title {
+    text-align: center;
+  }
+
+  .carousel {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease;
+    padding: 0 5px;
+}
+
+/* Set each image width to show 3 images in the visible area */
+.carousel img {
+    width: calc(33.33% - 10px); /* Adjusts to show 3 images with gaps */
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 5px;
+}
+
+.carousel-button.right {
+    right: 5px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+  /* Footer Section */
+footer {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+}
+
+.footer-section h2 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: rgb(165, 183, 0);
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+#haribot {
+  position: fixed;
+  bottom: 20px;         /* Distance from the bottom of the viewport */
+  right: 20px;          /* Distance from the right of the viewport */
+  width: 60px;          /* Adjust to control the size of the haribot */
+  height: auto;         /* Keeps the image's aspect ratio */
+  z-index: 1000;        /* Ensures it stays on top of other elements */
+  cursor: pointer;      /* Makes it clickable, if needed */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #header-img {
+    margin-top: 100px;
+  }
+
+  .carousel img {
+      width: calc(100% - 10px); /* Show one image per view on smaller screens */
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-links a {
+      font-size: 16px;
+  }
+
+  .carousel img {
+    width: calc(100% - 5px);
+}
+}
+
+@media (max-width: 480px) {
+
+  #header-img {
+    margin-top: 160px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo h1 {
+    font-size: 18px;
+}
+
+#chapter-title {
+  font-size: 20px;
+}
+
+.carousel img {
+  width: calc(100% - 5px);
+}
+}

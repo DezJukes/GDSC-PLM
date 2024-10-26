@@ -1,3 +1,4 @@
+// Carousel Functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-track img');
 const totalSlides = slides.length;
@@ -18,7 +19,7 @@ function prevSlide() {
     updateSlide();
 }
 
-//-------------------------------------------------------------
+// Smooth Section Animation
 
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".section");
@@ -38,6 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sections.forEach(section => {
         observer.observe(section);
+    });
+});
+
+
+// Accordion Functionality
+
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+            accordionContent.style.maxHeight = 0;
+        }
     });
 });
 
