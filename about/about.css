@@ -1,7 +1,6 @@
 /* General Reset */
 * {
     font-family: Google Sans, sans-serif, Arial;
-    transition: 1.5ms ease;
     box-sizing: border-box;
 }
 
@@ -91,6 +90,10 @@ html, body {
 
 /* Responsive Header */
 header {
+    text-align: center;
+}
+
+#intro-text {
     text-align: center;
 }
 
