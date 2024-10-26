@@ -169,6 +169,11 @@ footer {
     height: auto;         /* Keeps the image's aspect ratio */
     z-index: 1000;        /* Ensures it stays on top of other elements */
     cursor: pointer;      /* Makes it clickable, if needed */
+    transition: 0.3s ease;
+  }
+
+  #haribot:hover {
+    transform: scale(1.2);
   }
 
   /* Responsive Design */
