@@ -7,11 +7,25 @@ body {
   background: #F3F2F2;
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 html, body {
   width: 100%;
   height: 100%;
+}
+
+/* Custom cursor styling */
+.custom-cursor {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 150, 255, 0.8); /* Light blue color */
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; /* Prevents interfering with clicks */
+  transition: transform 0.1s ease; /* Smooth follow effect */
+  transform: translate(-50%, -50%); /* Center the circle on the cursor */
+  z-index: 9999; /* Brings cursor in front of all other content */
 }
 
 /* Base state for hidden sections */
@@ -236,6 +250,11 @@ footer {
   height: auto;         /* Keeps the image's aspect ratio */
   z-index: 1000;        /* Ensures it stays on top of other elements */
   cursor: pointer;      /* Makes it clickable, if needed */
+  transition: 0.3s ease;
+}
+
+#haribot:hover {
+  transform: scale(1.2);
 }
 
 

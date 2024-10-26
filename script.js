@@ -59,3 +59,14 @@ document.querySelectorAll('.accordion-header').forEach(button => {
     });
 });
 
+
+// Cursor Effect
+// Select the custom cursor element
+const customCursor = document.querySelector('.custom-cursor');
+
+// Add an event listener for mouse movement
+document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = `${e.pageX}px`;
+    customCursor.style.top = `${e.pageY}px`;
+});
+
