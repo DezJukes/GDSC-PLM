@@ -13,8 +13,7 @@ A group project task to do a website for a chosen organization. Here we are maki
 - Executive Boards
 
 ### Community
-- History
-- Developers of this website
+- Other GDSC Chapters
 
 ### Additional Features!
 - Haribot FAQ
