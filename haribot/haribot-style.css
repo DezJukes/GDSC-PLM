@@ -65,8 +65,11 @@ html, body {
     color: #ffcc00;
   }
 
+  /* Haribot CSS*/
+
   #haribot {
     padding: 0 50px;
+    object-fit: contain;
   }
 
   #faqs {
@@ -80,7 +83,6 @@ html, body {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 100px;
 }
 
