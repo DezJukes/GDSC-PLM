@@ -15,6 +15,19 @@ html, body {
     height: 100%;
 }
 
+/* Base state for hidden sections */
+.section {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* State when the section is in view */
+.section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Navigation Bar */
 .navbar {
     position: fixed;

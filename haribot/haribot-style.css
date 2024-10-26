@@ -64,3 +64,189 @@ html, body {
   .nav-links a:hover {
     color: #ffcc00;
   }
+
+  #haribot {
+    padding: 0 50px;
+  }
+
+  #faqs {
+    display: flex;
+    margin-top: 150px;
+    padding: 50px 50px;
+    background: url("../assets/bg3.png");
+  }
+
+  .accordion {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 100px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px; /* Increased padding */
+    background-color: #4ba4b2;
+    color: #fff;
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #45a049;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease;
+    padding: 0 20px; /* Increased padding for content */
+}
+
+.accordion-content p {
+    margin: 15px 0; /* Increased margin to add space between paragraphs */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+}
+
+.footer-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: rgb(165, 183, 0);
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+
+/* Responsive adjustments for the accordion */
+@media (max-width: 1200px) {
+  .accordion {
+      width: 80%;
+      margin: 0 auto; /* Centering the accordion */
+  }
+}
+
+@media (max-width: 992px) {
+  .accordion {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .accordion-header {
+      font-size: 16px; /* Slightly smaller font size */
+      padding: 15px;
+  }
+
+  .accordion-content p {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links a {
+    font-size: 16px;
+}
+  #faqs {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  #haribot {
+      width: 100%; /* Full width for image on small screens */
+      padding: 0 50px;
+      margin-bottom: 20px;
+  }
+
+  .accordion {
+      width: 80%;
+      margin-right: 30px;
+  }
+
+  .accordion-header {
+      font-size: 16px;
+      padding: 15px;
+  }
+
+  .accordion-content {
+      padding: 10px 15px;
+  }
+
+  .accordion-content p {
+      font-size: 14px;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#haribot {
+
+}
+  .accordion-header {
+      font-size: 14px; /* Smaller font size for very small screens */
+      padding: 12px;
+  }
+
+  .accordion-content {
+      padding: 8px 12px;
+  }
+
+  .accordion-content p {
+      font-size: 13px;
+  }
+}
