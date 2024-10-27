@@ -1,0 +1,85 @@
+* {
+    font-family: Google Sans, sans-serif, Arial;
+    transition: 1.5ms ease;
+  }
+  
+  body {
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Custom cursor styling */
+  .custom-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 150, 255, 0.8); /* Light blue color */
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Prevents interfering with clicks */
+    transition: transform 0.1s ease; /* Smooth follow effect */
+    transform: translate(-50%, -50%); /* Center the circle on the cursor */
+    z-index: 9999; /* Brings cursor in front of all other content */
+  }
+
+
+  /* Navigation Bar CSS */
+.navbar {
+    position: fixed;
+    top: 0; /* Fixed at the top */
+    width: 100%; /* Full width to avoid resizing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+  }
+  
+  
+  /* Logo and Website Name */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Center the navigation links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+
+  #header-img {
+    margin-top: 100px;
+    width: 100%;
+  }
