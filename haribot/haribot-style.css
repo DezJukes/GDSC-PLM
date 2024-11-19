@@ -135,6 +135,7 @@ nav ul li a:hover {
 
   #haribot {
     padding: 0 50px;
+    margin-top: -4rem;
     object-fit: contain;
   }
 
@@ -143,6 +144,14 @@ nav ul li a:hover {
     margin-top: 150px;
     padding: 50px 50px;
     background: url("../assets/bg3.png");
+  }
+
+  #FAQ {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    font-weight: bold;
   }
 
   .accordion {
@@ -301,10 +310,10 @@ footer {
     align-items: center;
     padding: 10px;
 }
+  #haribot {
+    margin-top: -10px;
+  }
 
-#haribot {
-
-}
   .accordion-header {
       font-size: 14px; /* Smaller font size for very small screens */
       padding: 12px;
