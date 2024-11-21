@@ -42,58 +42,98 @@ html, body {
   transform: translateX(0);
 }
 
-/* Navigation Bar */
-.navbar {
-    position: fixed;
-    top: 0; /* Fixed at the top */
-    width: 100%; /* Full width to avoid resizing */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-    border: 1px solid black;
-    z-index: 1000; /* Ensures the navbar stays above other content */
+/* Navbar Styles */
+nav {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem .1rem;
+  z-index: 1000;
+  border: solid 1px black;
+}
+
+/* Logo */
+nav .logo img {
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Menu Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: color .5s ease, border-color .5s ease;
+}
+
+nav ul li a:hover {
+  color: blue;
+  border-color: black;
+}
+
+
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
   }
-  
-  
-  /* Logo and Website Name */
-  .logo {
-    display: flex;
-    align-items: center;
+
+  nav .logo img {
+      height: 60px;
+  }    
+
+  .menu-icon {
+      display: block;
   }
-  
-  .logo img {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .logo h1 {
-    color: black;
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  /* Center the navigation links */
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-  }
-  
-  .nav-links a {
-    color: black;
-    text-decoration: none;
-    padding: 0 15px;
-    font-size: 18px;
-  }
-  
-  .nav-links a:hover {
-    color: #ffcc00;
-  }
+}
   
   #header-img {
     width: 100%;
+    margin-top: 6rem;
   }
   
   #intro-text {
@@ -223,6 +263,7 @@ footer {
 @media (max-width: 768px) {
   #header-img {
     margin-top: 100px;
+    margin-top: 5rem;
   }
 
   .carousel img {
@@ -246,7 +287,7 @@ footer {
 @media (max-width: 480px) {
 
   #header-img {
-    margin-top: 160px;
+    margin-top: 6rem;
   }
   .navbar {
     flex-direction: column;
