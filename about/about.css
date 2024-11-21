@@ -314,6 +314,10 @@ footer {
         width: calc(100% - 10px); /* Show one image per view on smaller screens */
     }
 
+    header {
+        margin-top: 5rem;
+    }
+
     .info-title {
         font-size: 24px;
     }
@@ -334,7 +338,7 @@ footer {
 
 @media (max-width: 480px) {
     #header-img {
-        margin-top: 100px;
+        margin-top: 0px;
       }
     
       #wrapper-content1 {
