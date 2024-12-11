@@ -136,8 +136,13 @@ nav ul li a:hover {
     opacity: 1;
     transform: translateX(0);
   }
-  /*Devs*/
 
+  main span {
+    border-bottom: 1px solid rgb(163, 106, 0);
+    color: rgb(163, 106, 0);
+  }
+  
+  /*Devs*/
   #wrapper-content1 {
     background-image: url("../assets/bg1.png");
     padding: 20px;
