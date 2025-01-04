@@ -154,6 +154,7 @@ header {
 /* Wrapper Content and GDSC Info */
 #wrapper-content1 {
     background-image: url("../assets/bg2.png");
+    background-size: cover;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -191,6 +192,7 @@ header {
 /* Carousel Section */
 #execs-section {
     background: url("../assets/bg3.png");
+    background-size: cover;
     padding: 50px 20px;
 }
 

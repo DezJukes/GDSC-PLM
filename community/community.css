@@ -143,6 +143,7 @@ nav ul li a:hover {
   /*Carousel CSS*/
   #chapters-section {
     background: url("../assets/bg1.png");
+    background-size: cover;
   }
 
   #chapters-title {

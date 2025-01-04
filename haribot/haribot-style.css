@@ -144,6 +144,7 @@ nav ul li a:hover {
     margin-top: 150px;
     padding: 50px 50px;
     background: url("../assets/bg3.png");
+    background-size: cover;
   }
 
   #FAQ {

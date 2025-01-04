@@ -143,6 +143,7 @@ nav ul li a:hover {
 /* Past Events CSS */
 #wrapper-content1 {
   background-image: url("assets/bg1.png");
+  background-size: cover;
   padding: 20px;
 }
 
@@ -177,6 +178,7 @@ nav ul li a:hover {
 /* GDSC Info CSS */
 #wrapper-content2 {
   background-image: url("assets/bg2.png");
+  background-size: cover;
   padding: 20px;
 }
 
@@ -211,6 +213,7 @@ nav ul li a:hover {
 /* Vision Mission CSS */
 #wrapper-content3 {
   background-image: url("assets/bg3.png");
+  background-size: cover;
   padding: 20px;
 }
 

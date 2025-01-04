@@ -145,6 +145,7 @@ nav ul li a:hover {
   /*Devs*/
   #wrapper-content1 {
     background-image: url("../assets/bg1.png");
+    background-size: cover;
     padding: 20px;
   }
   
