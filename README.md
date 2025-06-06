@@ -24,3 +24,6 @@ A group project task to do a website for a chosen organization. Here we are maki
 ### Additional Features!
 - Haribot FAQ
 - You can sign up!
+
+## License
+This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
