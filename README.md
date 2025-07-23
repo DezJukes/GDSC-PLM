@@ -1,6 +1,8 @@
 # GDSC-Website
 A group project task to do a website for a chosen organization. Here we are making a website for Google Developer Student Clubs PLM 2022.
 
+![GDSC PLM Website 2022 Screenshot](mockup/gdsc-sample.png)
+
 ## Team Members
  - Atencia, Dan Erdz - **UI/UX Designer**
  - Ambrocio, Jericho - **Developer**
